@@ -5,7 +5,12 @@ const buildControl = (props) => (
     <div className={styles.BuildControl}>
         <div className={styles.Label}>{props.label}</div>
         <button className={styles.Less}>Less</button>
-        <button className={styles.Mode}>More</button>
+        <button
+            className={styles.Mode}
+            onClick={props.added}
+        >
+            More
+        </button>
     </div>
 );
 
